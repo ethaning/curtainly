@@ -29,8 +29,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets-rails'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.beta2'
-gem 'devise'
+gem "font-awesome-rails"
 
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
