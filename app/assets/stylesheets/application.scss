@@ -13,5 +13,16 @@
  */
 
 @import "bootstrap";
-@import "_colors";
+@import "font-awesome-sprockets";
 @import "font-awesome";
+
+@import "_colors";
+@import "home";
+
+.flash {
+  p {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
