@@ -2,7 +2,11 @@
   <div class="row">
     <div class="col-sm">
       <header>
-        <%= icon('bars', id: "menu-icon") %>
+        <div class="menu-icons" onclick="showNav()">
+          <i id="menu-icon" class="fa fa-bars menu-icon"></i>
+          <i id="exit-menu-icon" class="fa fa-times exit-menu-icon"></i>
+        </div>
+        
         <div class="header-logo">
           <a href="#"><h1>Curtainly</h1></a>
         </div>
@@ -12,16 +16,14 @@
 
   <div class="row">
     <div class="col-sm-3">
-      <aside class="sidebar">
+      <aside class="sidebar b-c-blanchedalmond" id="nav-container">
         <div class="mobile-nav">
-          <nav>
-            <ul>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Testimonials</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+          <ul class="nav flex-column" id="nav-list">
+            <a href="#"><li>Gallery</li></a>
+            <a href="#"><li>Testimonials</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
         </div>
       </aside>
     </div>

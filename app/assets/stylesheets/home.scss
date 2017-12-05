@@ -3,10 +3,30 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 header {
-  #menu-icon {
+  .menu-icons {
     font-size: 2rem;
     float: left;
     margin: 10px 0 10px 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    
+    .menu-icon {
+      position: absolute;
+    }
+
+    .exit-menu-icon {
+      position: absolute;
+      z-index: 6;
+      opacity: 0;
+    }
+
+    .transparent {
+      opacity: 0;
+    }
+
+    .opaque {
+      opacity: 1;
+    }
   }
 
   .header-logo {
@@ -23,4 +43,40 @@ header {
       color: maroon;
     }
   }
+}
+
+.sidebar {
+  position: absolute;
+  left: -105%;
+  z-index: 9999;
+  transition: .4s;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      
+      li {
+
+      }
+
+    }
+
+    a:hover {
+      background-color: coral;
+      color: black;
+    }
+  }
+}
+
+// helper classes
+
+.active {
+  left: 0;
 }
