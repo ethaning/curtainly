@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 2.5'
 gem 'sprockets-rails'
 gem 'jquery-rails'
 gem 'bootstrap', '~> 4.0.0.beta2'
-gem "font-awesome-rails"
 
 gem 'devise'
 
