@@ -1,0 +1,30 @@
+
+.sidebar {
+  position: absolute;
+  left: -105%;
+  z-index: 9999;
+  transition: .4s;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      padding: 10px 0;
+      font-size: 1.2rem;
+      
+      li {
+
+      }
+
+    }
+
+    a:hover {
+      background-color: coral;
+      color: black;
+    }
+  }
+}

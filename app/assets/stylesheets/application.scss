@@ -18,6 +18,8 @@
 
 @import "_colors";
 @import "home";
+@import "header";
+@import "navigation";
 
 .flash {
   p {
@@ -25,4 +27,11 @@
     padding: 0;
     border: none;
   }
+}
+
+
+// helper classes
+
+.active {
+  left: 0;
 }
