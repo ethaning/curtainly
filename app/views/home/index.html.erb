@@ -29,7 +29,21 @@
         </section>
         <div class="row">
           <section class="contact">
-            
+            <h3>Contact</h3>
+            <%= form_for @form, url: home_form_path do |f| -%>
+              <fieldset>
+                <%= f.text_field :name, class: "form-input", id: "name", placeholder: "Name" %>
+              </fieldset>
+              <fieldset>
+                <%= f.email_field :email, class: "form-input", id: "email", placeholder: "Email Address" %>
+              </fieldset>
+              <fieldset>
+                <%= f.text_area :message, class: "form-input", id: "message", rows: "10", placeholder: "Write your message..." %>
+              </fieldset>
+              <fieldset>
+                <%= f.submit "Send Message" %>
+              </fieldset>
+            <% end -%>
           </section>
         </div>
       </main>
