@@ -38,36 +38,7 @@
   <!-- Form Modal
       FIXME: click event anywhere exits from modal
    -->
-  <div class="modal fade" id="contact-form" tabindex="-1" role="dialog" aria-labelledby="contact-form-label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content c-black">
-        <div class="modal-header">
-          <h5 class="modal-title" id="contact-form-label">Contact Us</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <section class="contact">
-            <%= form_for @form, url: home_form_path do |f| -%>
-              <fieldset class="">
-                <%= f.text_field :name, class: "form-input form-control", id: "name", placeholder: "Name" %>
-              </fieldset>
-              <fieldset class="">
-                <%= f.email_field :email, class: "form-input form-control", id: "email", placeholder: "Email Address" %>
-              </fieldset>
-              <fieldset class="">
-                <%= f.text_area :message, class: "form-input form-control", id: "message", rows: "10", placeholder: "Write your message..." %>
-              </fieldset>
-              <fieldset class="">
-                <%= f.submit "Send Message", class: "btn btn-primary" %>
-              </fieldset>
-            <% end -%>
-          </section>
-        </div>
-      </div>
-    </div>
-  </div>
+  <%= render "home/contact_form_modal" %>
 
   <div class="modal-carousels">
     <% for i in 1..4 %>
