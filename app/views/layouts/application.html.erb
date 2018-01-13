@@ -15,7 +15,7 @@
     </div>
 
     <div class="container b-c-peachpuff">
-      <div class="row">
+      <div class="row b-c-burlywood d-md-none">
         <div class="col-sm">
           <header>
             <div class="menu-icons" onclick="showNav()">
@@ -31,10 +31,13 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 left-col">
+          <div class="header-logo d-none d-md-block">
+            <a href="#"><h1>Curtainly</h1></a>
+          </div>
           <%= render "home/navigation" %>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-9 right-col">
           <main>
             <%= yield %>
           </main>

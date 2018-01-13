@@ -5,7 +5,7 @@ header {
     margin: 10px 0 10px 10px;
     cursor: pointer;
     transition: 0.4s;
-    
+
     .menu-icon {
       position: absolute;
     }
@@ -25,18 +25,25 @@ header {
     }
   }
 
-  .header-logo {
-    a {
-      text-decoration: none;
-
-      h1 {
-        margin: 10px 0 10px;
-        text-align: center;
-      }
+  @media (min-width: $screen-sm) {
+    .menu-icons {
+      display: none;
     }
+  }
+}
 
-    a:hover {
-      color: maroon;
+
+.header-logo {
+  a {
+    text-decoration: none;
+
+    h1 {
+      margin: 10px 0 10px;
+      text-align: center;
     }
+  }
+
+  a:hover {
+    color: maroon;
   }
 }

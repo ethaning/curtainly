@@ -17,6 +17,7 @@
 @import "font-awesome";
 
 @import "_colors";
+@import "_bootstrap_screen_breakpoints";
 @import "home";
 @import "header";
 @import "navigation";
@@ -29,6 +30,12 @@
     margin: 0;
     padding: 0;
     border: none;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .left-col {
+    margin-top: 23px;
   }
 }
 

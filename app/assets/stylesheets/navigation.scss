@@ -1,33 +1,48 @@
-
 .sidebar {
-  position: absolute;
   left: -105%;
-  z-index: 9999;
+  position: absolute;
   transition: .4s;
   width: 100%;
+  z-index: 9999;
 
   ul {
     list-style: none;
     padding: 0;
     text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    transition: 0.35s;
+  }
+
+  a:hover {
+    background-color: coral;
+    color: black;
+  }
+
+  @media (min-width: $screen-sm) {
+    left: unset;
+    position: relative;
+    transition: 0s;
+    z-index: 0;
 
     a {
-      text-decoration: none;
-      padding: 10px 0;
-      font-size: 1.2rem;
-      
-      li {
-
-      }
-
+      font-size: 1rem;
     }
+  }
 
-    a:hover {
-      background-color: coral;
-      color: black;
+  @media (min-width: $screen-md) {
+    margin-top: 23px;
+
+    a {
+      font-size: 1.2rem;
     }
   }
 }
+
 
 
 // helper classes
