@@ -1,0 +1,21 @@
+// BOOTSTRAP 4 SCREEN WIDTH BREAKPOINTS
+// Extra small screen / phone
+$screen-sm:                  576px;
+$screen-sm-min:              $screen-sm;
+
+// Small screen / tablet
+$screen-md:                  768px;
+$screen-md-min:              $screen-md;
+
+// Medium screen / desktop
+$screen-lg:                  992px;
+$screen-lg-min:              $screen-lg;
+
+// Large screen / wide desktop
+$screen-xl:                  1200px;
+$screen-xl-min:              $screen-xl;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+$screen-lg-max:              ($screen-xl-min - 1);
