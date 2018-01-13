@@ -1,61 +1,19 @@
-<div class="container b-c-peachpuff">
+<section class="gallery-highlights">
   <div class="row">
-    <div class="col-sm">
-      <header>
-        <div class="menu-icons" onclick="showNav()">
-          <i id="menu-icon" class="fa fa-bars menu-icon"></i>
-          <i id="exit-menu-icon" class="fa fa-times exit-menu-icon"></i>
-        </div>
-
-        <div class="header-logo">
-          <a href="#"><h1>Curtainly</h1></a>
-        </div>
-      </header>
-    </div>
+    <% for i in 1..4 %>
+      <%= render "home/gallery_item", id: i %>
+    <% end %>
   </div>
-
-  <div class="row">
-    <div class="col-sm-3">
-      <%= render "home/navigation" %>
-    </div>
-    <div class="col-sm-9">
-      <main>
-        <section class="gallery-highlights">
-          <div class="row">
-            <% for i in 1..4 %>
-              <%= render "home/gallery_item", id: i %>
-            <% end %>
-          </div>
-        </section>
-        <div class="row text-center">
-          <a href="#contact-form-link" class="btn btn-primary btn-contact-form" data-toggle="modal" data-target="#contact-form">Contact Us!</a>
-        </div>
-      </main>
-    </div>
-  </div>
-
-
-  <!-- Form Modal
-      FIXME: click event anywhere exits from modal
-   -->
-  <%= render "home/contact_form_modal" %>
-
   <div class="modal-carousels">
     <% for i in 1..4 %>
       <%= render "home/modal_carousel", id: i %>
     <% end %>
   </div>
-
-  <footer class="row">
-    <div class="col-4 social-links">
-      <a href="#" id="instagram" class="fa fa-instagram social-icon"></a>
-      <a href="#" id="facebook" class="fa fa-facebook-official social-icon"></a>
-    </div>
-    <div class="col-4">
-      <p id="telephone">0777897987</p>
-    </div>
-    <div class="col-4 ">
-      <p id="design-by">Design by Ethan</p>
-    </div>
-  </footer>
+</section>
+<div class="row text-center">
+  <a href="#contact-form-link" class="btn btn-primary btn-contact-form" data-toggle="modal" data-target="#contact-form">Contact Us!</a>
+  <%= render "home/contact_form_modal" %>
 </div>
+
+
+

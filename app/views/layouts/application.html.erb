@@ -13,7 +13,47 @@
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div>
-    
-    <%= yield %>
+
+    <div class="container b-c-peachpuff">
+      <div class="row">
+        <div class="col-sm">
+          <header>
+            <div class="menu-icons" onclick="showNav()">
+              <i id="menu-icon" class="fa fa-bars menu-icon"></i>
+              <i id="exit-menu-icon" class="fa fa-times exit-menu-icon"></i>
+            </div>
+
+            <div class="header-logo">
+              <a href="#"><h1>Curtainly</h1></a>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3">
+          <%= render "home/navigation" %>
+        </div>
+        <div class="col-sm-9">
+          <main>
+            <%= yield %>
+          </main>
+        </div>
+      </div>
+
+      <footer class="row">
+        <div class="col-4 social-links">
+          <a href="#" id="instagram" class="fa fa-instagram social-icon"></a>
+          <a href="#" id="facebook" class="fa fa-facebook-official social-icon"></a>
+        </div>
+        <div class="col-4">
+          <p id="telephone">0777897987</p>
+        </div>
+        <div class="col-4 ">
+          <p id="design-by">Design by Ethan</p>
+        </div>
+      </footer>
+    </div>
+
   </body>
 </html>
