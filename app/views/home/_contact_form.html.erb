@@ -1,0 +1,16 @@
+<section class="contact">
+  <%= form_for @form, url: home_form_path do |f| -%>
+    <fieldset class="">
+      <%= f.text_field :name, class: "form-input form-control", id: "name", placeholder: "Name" %>
+    </fieldset>
+    <fieldset class="">
+      <%= f.email_field :email, class: "form-input form-control", id: "email", placeholder: "Email Address" %>
+    </fieldset>
+    <fieldset class="">
+      <%= f.text_area :message, class: "form-input form-control", id: "message", rows: "10", placeholder: "Write your message..." %>
+    </fieldset>
+    <fieldset class="">
+      <%= f.submit "Send Message", class: "btn btn-primary" %>
+    </fieldset>
+  <% end -%>
+</section>

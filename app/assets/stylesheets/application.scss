@@ -18,12 +18,19 @@
 
 @import "_colors";
 @import "_bootstrap_screen_breakpoints";
+@import "_flash_notices";
 @import "home";
 @import "header";
 @import "navigation";
 @import "gallery";
 @import "footer";
 @import "contact";
+
+
+.hidden {
+  display: none;
+}
+
 
 .flash {
   p {

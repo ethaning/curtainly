@@ -1,10 +1,11 @@
 class HomeController < ApplicationController
   def index
     @form = Form.new
+    @contact = Contact.new
   end
 
   def form
-    binding.pry
+    # binding.pry
     redirect_to root_path
   end
 
