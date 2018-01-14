@@ -18,3 +18,5 @@
 
 .byebug_history
 tasks.todo
+.env
+Procfile
