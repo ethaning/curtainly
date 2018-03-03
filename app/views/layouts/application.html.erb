@@ -42,7 +42,9 @@
       <div class="row">
         <div class="col-sm-3 left-col">
           <div class="header-logo d-none d-md-block">
-            <a href="#"><h1>Curtainly</h1></a>
+            <%= link_to root_path do %>
+              <h1>Curtainly</h1>
+            <% end %>
           </div>
           <%= render "home/navigation" %>
         </div>
