@@ -2,11 +2,11 @@ Rails.application.routes.draw do
   devise_for :admins
   root to: 'home#index'
 
-  get 'home/index'
+  get 'mail', to: 'home#mail'
 
-  get 'home/mail'
+  get 'about_us', to: 'home#about_us'
 
-  post 'home/form'
+  post 'form', to: 'home#form'
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]

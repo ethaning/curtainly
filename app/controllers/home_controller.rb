@@ -12,6 +12,10 @@ class HomeController < ApplicationController
   def mail
   end
 
+  def about_us
+
+  end
+
   private
 
   def form_params
