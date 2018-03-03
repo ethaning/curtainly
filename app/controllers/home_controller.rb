@@ -1,11 +1,10 @@
 class HomeController < ApplicationController
+  before_action :prepare_contact_form
+
   def index
-    @form = Form.new
-    @contact = Contact.new
   end
 
   def form
-    # binding.pry
     redirect_to root_path
   end
 
@@ -13,10 +12,13 @@ class HomeController < ApplicationController
   end
 
   def about_us
-
   end
 
   private
+
+  def prepare_contact_form
+    @contact = Contact.new
+  end
 
   def form_params
     params.require(:form).permit(:name, :email, :message)

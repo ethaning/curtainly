@@ -33,7 +33,9 @@
             </div>
 
             <div class="header-logo">
-              <a href="#"><h1>Curtainly</h1></a>
+              <%= link_to root_path do %>
+                <h1>Curtainly</h1>
+              <% end %>
             </div>
           </header>
         </div>
@@ -56,21 +58,25 @@
       </div>
     </div>
 
-      <footer>
-        <div class="container">
-          <div class="footer-row row">
-            <div class="col-4 social-links">
-              <a href="#" id="instagram" class="fa fa-instagram social-icon"></a>
-              <a href="#" id="facebook" class="fa fa-facebook-official social-icon"></a>
-            </div>
-            <div class="col-4">
-              <p id="telephone">0777897987</p>
-            </div>
-            <div class="col-4 ">
-              <p id="design-by">Design by Ethan</p>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="footer-row row">
+          <div class="col-4 social-links">
+            <a href="#" id="instagram" class="fa fa-instagram social-icon"></a>
+            <a href="#" id="facebook" class="fa fa-facebook-official social-icon"></a>
+          </div>
+          <div class="col-4">
+            <p id="telephone">0777897987</p>
+          </div>
+          <div class="col-4 ">
+            <p id="design-by">Design by Ethan</p>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
+
+    <div class="modals-container">
+      <%= render "home/contact_form_modal" %>
+    </div>
   </body>
 </html>
