@@ -26,4 +26,13 @@ footer {
       float: right;
     }
   }
+
+  @media (min-width: $screen-lg) {
+    .footer-container {
+      bottom: 0;
+      max-width: 100vw;
+      position: fixed;
+      width: 100%;
+    }
+  }
 }

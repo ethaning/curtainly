@@ -70,3 +70,10 @@
   }
 }
 
+@media (min-width: $screen-lg) {
+  .main-content {
+    min-height: 100vh;
+    margin-bottom: 56px;
+  }
+}
+
