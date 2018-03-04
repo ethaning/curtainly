@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get 'about_us', to: 'home#about_us'
 
+  get 'testimonials', to: 'home#testimonials'
+
   post 'form', to: 'home#form'
 
   match '/contacts',     to: 'contacts#new',             via: 'get'

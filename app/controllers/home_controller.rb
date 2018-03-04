@@ -14,6 +14,10 @@ class HomeController < ApplicationController
   def about_us
   end
 
+  def testimonials
+
+  end
+
   private
 
   def prepare_contact_form

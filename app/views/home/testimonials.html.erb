@@ -1,0 +1,21 @@
+<section class="testimonial-section">
+  <h1 class="header">Testimonials</h1>
+  <h3 class="subheader">What customers have to say about Curtainly</h3>
+  <div class="row">
+    <% 9.times do |x| %>
+      <div class="col-lg-4">
+        <% if x.even? %>
+          <blockquote class="testimonial d-block img-fluid">
+            <span class="quotes">“</span>
+            <div class="testimonial-wrapper">
+              <p class="testimonial-text">What a great curtain oh my god I love it thanks curtainly!!!</p>
+              <p class="testifier">Jerry Mcgee</p>
+            </div>
+          </blockquote>
+        <% else %>
+          <%# image_tag '8.jpg', class: "testimonial-grid-image" %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>
