@@ -35,6 +35,8 @@ gem 'devise'
 gem 'mail_form'
 gem 'simple_form'
 
+gem 'rails_admin', '~> 1.3'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry-byebug', platforms: [:mri, :mingw, :x64_mingw]
