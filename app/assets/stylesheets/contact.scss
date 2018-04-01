@@ -1,5 +1,5 @@
 .btn-contact-form {
-  margin: 0 auto 20px;
+  margin: 2rem auto 20px;
   width: 100%;
 }
 
@@ -20,5 +20,28 @@
 
   textarea.required {
     height: 160px;
+  }
+}
+
+.social-contact {
+  position: absolute;
+  bottom: 15px;
+  font-size: 1.8rem;
+  left: -90px;
+
+  @media (min-width: $screen-md) {
+    left: -110px;
+  }
+
+  @media (min-width: $screen-lg) {
+    left: -150px;
+  }
+
+  @media (min-width: $screen-xl) {
+    left: -160px;
+  }
+
+  .social-icon {
+    margin-right: 0.5rem;
   }
 }

@@ -1,0 +1,69 @@
+$backdrop: #f4f4f4;
+$navbar: #fff;
+$hover: #dcd0c0;
+$text: #373737;
+$text-soft: #444;
+$highlight: #c0b283;
+
+body {
+  background-color: $backdrop;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  color: $text;
+}
+
+h1.header-logo-text {
+  color: $highlight;
+}
+
+.subheader {
+  color: $text-soft;
+}
+
+.menu-icons {
+  color: $highlight;
+}
+
+.sidebar {
+  background-color: $navbar;
+
+  @media (min-width: $screen-sm) {
+    background-color: inherit;
+  }
+
+  a:hover {
+    background-color: $hover;
+    color: $text;
+  }
+}
+
+.testimonial {
+  background: inherit;
+
+  .quotes {
+    color: $highlight;
+  }
+}
+
+.gallery-item {
+  .overlay {
+    background-color: $hover;
+  }
+}
+
+.gallery-item:hover {
+  .overlay {
+    a {
+      color: $text;
+    }
+  }
+}
+
+.social-icon {
+  color: $highlight;
+}
+
+.modal-content {
+  background-color: $backdrop;
+}

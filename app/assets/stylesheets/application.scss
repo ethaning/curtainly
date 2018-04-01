@@ -19,6 +19,7 @@
 @import "_colors";
 @import "_bootstrap_screen_breakpoints";
 @import "_flash_notices";
+@import "_colour_scheme.scss";
 @import "home";
 @import "header";
 @import "navigation";
@@ -28,13 +29,15 @@
 @import "about_us";
 @import "testimonials";
 
+
+
 .header {
   margin-top: 25px;
   margin-bottom: 15px;
 }
 
 .subheader {
-  margin-bottom: -5px;
+  // margin-bottom: -5px;
 }
 
 @media (min-width: $screen-md) {
@@ -70,10 +73,10 @@
   }
 }
 
-@media (min-width: $screen-lg) {
-  .main-content {
-    min-height: 100vh;
-    margin-bottom: 56px;
-  }
-}
+// @media (min-width: $screen-lg) {
+//   .main-content {
+//     min-height: 100vh;
+//     margin-bottom: 56px;
+//   }
+// }
 

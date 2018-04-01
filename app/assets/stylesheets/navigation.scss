@@ -18,11 +18,6 @@
     transition: 0.35s;
   }
 
-  a:hover {
-    background-color: coral;
-    color: black;
-  }
-
   @media (min-width: $screen-sm) {
     left: unset;
     position: relative;
