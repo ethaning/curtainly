@@ -49,7 +49,9 @@
             <% end %>
           </div>
           <%= render "home/navigation" %>
-          <%= render "home/testimonials" %>
+          <% unless current_page_testimonials? %>
+            <%= render "home/testimonials" %>
+          <% end %>
         </div>
         <div class="col-sm-9 right-col">
           <main>
