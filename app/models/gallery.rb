@@ -1,15 +1,14 @@
 class Gallery < ApplicationRecord
   has_many :gallery_images
 
-  mount_uploader :cover, CoverUploader
+  validates :title, presence: true
+  validates :cover, presence: true
 
   scope :published, -> { where published: true }
+
+  mount_uploader :cover, CoverUploader
 
   def images
     gallery_images
   end
-
-  # def cover
-  #   images.first
-  # end
 end
