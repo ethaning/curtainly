@@ -1,6 +1,6 @@
 <section class="about-us">
   <h1 class="header">About Curtainly</h1>
-  <h3 class="subheader">Finest Curtains and Roman Blinds</h3>
+  <h3 class="subheader"><%= Subheader.last.about_us %></h3>
   <%= image_tag '8.jpg', class: "about-us-image" %>
   <% @about.text_array.each do |x| %>
     <p class="para"><%= x %></p>
