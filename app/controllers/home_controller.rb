@@ -12,6 +12,7 @@ class HomeController < ApplicationController
   end
 
   def about_us
+    @about = AboutUs.last
   end
 
   def testimonials
