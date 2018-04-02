@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402210258) do
+ActiveRecord::Schema.define(version: 20180402214100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -62,6 +62,14 @@ ActiveRecord::Schema.define(version: 20180402210258) do
     t.datetime "updated_at", null: false
     t.bigint "gallery_id"
     t.index ["gallery_id"], name: "index_gallery_images_on_gallery_id"
+  end
+
+  create_table "social_links", force: :cascade do |t|
+    t.string "instagram_url"
+    t.string "facebook_url"
+    t.string "telephone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "testimonials", force: :cascade do |t|

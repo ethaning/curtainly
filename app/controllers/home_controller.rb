@@ -1,6 +1,4 @@
 class HomeController < ApplicationController
-  before_action :prepare_contact_form
-
   def index
   end
 
@@ -20,10 +18,6 @@ class HomeController < ApplicationController
   end
 
   private
-
-  def prepare_contact_form
-    @contact = Contact.new
-  end
 
   def form_params
     params.require(:form).permit(:name, :email, :message)
