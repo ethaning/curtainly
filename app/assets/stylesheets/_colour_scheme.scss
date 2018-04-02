@@ -5,6 +5,8 @@ $text: #373737;
 $text-soft: #444;
 $highlight: #c0b283;
 $bootstrap-border: #e9ecef;
+$carousel-indicator: rgba(0, 0, 0, 0.2);
+$carousel-indicator-active: rgba(0, 0, 0, 0.5);
 
 body {
   background-color: $backdrop;
@@ -67,4 +69,14 @@ h1.header-logo-text {
 
 .modal-content {
   background-color: $backdrop;
+}
+
+.carousel-indicators {
+  li {
+    background-color: $carousel-indicator;
+  }
+
+  .active {
+    background-color: $carousel-indicator-active;
+  }
 }
