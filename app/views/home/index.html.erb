@@ -1,12 +1,12 @@
 <section class="gallery-highlights">
   <div class="row">
-    <% for i in 1..4 %>
-      <%= render "home/gallery_item", id: i %>
+    <% Gallery.all.each.with_index do |g, i| %>
+      <%= render "home/gallery_item", gallery: g, id: i %>
     <% end %>
   </div>
   <div class="modal-carousels">
-    <% for i in 1..4 %>
-      <%= render "home/modal_carousel", id: i %>
+    <% Gallery.all.each.with_index do |g, i| %>
+      <%= render "home/modal_carousel", gallery: g, id: i %>
     <% end %>
   </div>
 </section>

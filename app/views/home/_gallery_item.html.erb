@@ -1,13 +1,14 @@
 <div class="col-lg-6 col-xs-12">
   <div class="gallery-item">
     <div class="overlay">
-      <a href="#gallery-<%= id %>" data-toggle="modal" >
-        <p>Example Work</p>
+      <a href="#gallery-<%= gallery.id %>" data-toggle="modal" >
+        <p><%= gallery.title %></p>
       </a>
     </div>
     <div class="underlay">
       <a href="#">
-        <img src="http://via.placeholder.com/600x600" alt="">
+        <!-- 600px x 600px -->
+        <%= image_tag gallery.cover.url, alt: gallery.title %>
       </a>
     </div>
   </div>

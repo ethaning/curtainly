@@ -20,3 +20,5 @@
 tasks.todo
 .env
 Procfile
+
+/public/uploads
