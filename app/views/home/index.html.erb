@@ -1,11 +1,11 @@
 <section class="gallery-highlights">
   <div class="row">
-    <% Gallery.all.each.with_index do |g, i| %>
+    <% Gallery.published.each.with_index do |g, i| %>
       <%= render "home/gallery_item", gallery: g, id: i %>
     <% end %>
   </div>
   <div class="modal-carousels">
-    <% Gallery.all.each.with_index do |g, i| %>
+    <% Gallery.published.each.with_index do |g, i| %>
       <%= render "home/modal_carousel", gallery: g, id: i %>
     <% end %>
   </div>

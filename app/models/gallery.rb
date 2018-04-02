@@ -3,6 +3,8 @@ class Gallery < ApplicationRecord
 
   mount_uploader :cover, CoverUploader
 
+  scope :published, -> { where published: true }
+
   def images
     gallery_images
   end
