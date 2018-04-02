@@ -1,33 +1,18 @@
 <aside class="testimonial-carousel d-none d-lg-block">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <blockquote class="testimonial d-block img-fluid">
-          <span class="quotes">“</span>
-          <div class="testimonial-wrapper">
-            <p class="testimonial-text">What a great curtain oh my god I love it thanks curtainly!!!</p>
-            <p class="testifier">Jerry Mcgee</p>
-          </div>
-        </blockquote>
-      </div>
-      <div class="carousel-item">
-        <blockquote class="testimonial d-block img-fluid">
-          <span class="quotes">“</span>
-          <div class="testimonial-wrapper">
-            <p class="testimonial-text">What a great curtain oh my god I love it thanks curtainly!!!</p>
-            <p class="testifier">Tina Jimothy</p>
-          </div>
-        </blockquote>
-      </div>
-      <div class="carousel-item">
-        <blockquote class="testimonial d-block img-fluid">
-          <span class="quotes">“</span>
-          <div class="testimonial-wrapper">
-            <p class="testimonial-text">What a great curtain oh my god I love it thanks curtainly!!!</p>
-            <p class="testifier">Gayle Louise</p>
-          </div>
-        </blockquote>
-      </div>
+      <% Testimonial.carousel.each.with_index do |t, i| %>
+        <div class="carousel-item <%= 'active' if i == 0 %>">
+          <blockquote class="testimonial d-block img-fluid">
+            <span class="quotes">“</span>
+            <div class="testimonial-wrapper">
+              <p class="testimonial-text"><%= t.testimonial %></p>
+              <p class="testifier"><%= t.name %></p>
+              <p class="testimonial-location"><%= t.location %></p>
+            </div>
+          </blockquote>
+        </div>
+      <% end %>
     </div>
   </div>
 </aside>

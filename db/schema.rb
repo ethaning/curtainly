@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402161439) do
+ActiveRecord::Schema.define(version: 20180402164016) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -55,6 +55,16 @@ ActiveRecord::Schema.define(version: 20180402161439) do
     t.datetime "updated_at", null: false
     t.bigint "gallery_id"
     t.index ["gallery_id"], name: "index_gallery_images_on_gallery_id"
+  end
+
+  create_table "testimonials", force: :cascade do |t|
+    t.string "name"
+    t.text "testimonial"
+    t.string "location"
+    t.boolean "published"
+    t.boolean "carousel"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "gallery_images", "galleries"
