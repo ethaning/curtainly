@@ -7,3 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Admin.create(email: 'admin@curtainly.com', password: 'password', password_confirmation: 'password')
+SocialLink.create(instagram_url: '#', facebook_url: '#', telephone: '090909090')
+Subheader.create(testimonials: "What customers have to say about Curtainly",
+  about_us: "Finest Curtains and Roman Blinds",
+  contact_us: "Send a message to us"
+)
+AboutUs.create(text: "about us text goes here")
