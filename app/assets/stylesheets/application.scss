@@ -56,6 +56,8 @@
 
 
 .flash {
+  float: left;
+
   p {
     margin: 0;
     padding: 0;
@@ -70,6 +72,19 @@
 @media (min-width: $screen-sm) {
   .left-col {
     margin-top: 23px;
+  }
+}
+
+.sign-in-form {
+  margin-top: 30px;
+
+  label {
+    margin-right: 10px;
+  }
+
+  .form-field * {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
