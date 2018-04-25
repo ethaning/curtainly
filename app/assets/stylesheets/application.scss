@@ -19,6 +19,7 @@
 @import "_bootstrap_screen_breakpoints";
 @import "_flash_notices";
 @import "_colour_scheme.scss";
+@import "app";
 @import "home";
 @import "header";
 @import "navigation";
@@ -27,70 +28,3 @@
 @import "contact";
 @import "about_us";
 @import "testimonials";
-
-
-
-.header {
-  margin-top: 25px;
-  margin-bottom: 15px;
-}
-
-.subheader {
-  // margin-bottom: -5px;
-}
-
-@media (min-width: $screen-md) {
-  .header {
-    margin-top: 35px;
-  }
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.hidden {
-  display: none;
-}
-
-
-.flash {
-  float: left;
-
-  p {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-}
-
-.main-content {
-  // min-height: 90vh;
-}
-
-@media (min-width: $screen-sm) {
-  .left-col {
-    margin-top: 23px;
-  }
-}
-
-.sign-in-form {
-  margin-top: 30px;
-
-  label {
-    margin-right: 10px;
-  }
-
-  .form-field * {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-}
-
-// @media (min-width: $screen-lg) {
-//   .main-content {
-//     min-height: 100vh;
-//     margin-bottom: 56px;
-//   }
-// }
-
