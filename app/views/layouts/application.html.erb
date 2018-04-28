@@ -26,7 +26,7 @@
     <div class="container main-content">
       <header>
         <div class="row">
-          <div class="col-md-9 offset-md-3">
+          <div class="col-lg-9 offset-lg-3">
             <div class="header-logo">
               <%= link_to root_path do %>
                 <h1 class="header-logo-text">Curtainly</h1>
@@ -35,24 +35,24 @@
             <h2 class="header-subheader-text"><%= Subheader.last.homepage %></h2>
           </div>
         </div>
-        <div class="row d-md-none">
+        <div class="row d-lg-none">
           <div class="col-sm">
-              <div class="menu-icons" onclick="showNav()">
-                <i id="menu-icon" class="fa fa-bars menu-icon navbar-icon"></i>
-                <i id="exit-menu-icon" class="fa fa-times exit-menu-icon navbar-icon"></i>
-              </div>
+            <div class="menu-icons" onclick="showNav()">
+              <i id="menu-icon" class="fa fa-bars menu-icon navbar-icon"></i>
+              <i id="exit-menu-icon" class="fa fa-times exit-menu-icon navbar-icon"></i>
+            </div>
           </div>
         </div>
       </header>
 
       <div class="row">
-        <div class="col-md-3 left-col">
+        <div class="col-lg-3 left-col">
           <%= render "home/navigation" %>
           <% unless current_page_testimonials? %>
             <%= render "home/testimonials" %>
           <% end %>
         </div>
-        <div class="col-md-9 right-col">
+        <div class="col-lg-9 right-col">
           <main>
             <%= yield %>
           </main>
