@@ -58,3 +58,13 @@ header {
     color: maroon;
   }
 }
+
+.header-subheader-text {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 25px 0 0;
+
+  @media (max-width: $screen-xs-max) {
+    display: none;
+  }
+}
