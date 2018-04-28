@@ -8,7 +8,6 @@ class ApplicationController < ActionController::Base
   def prepare_social_links
     @instagram_url = SocialLink.last.instagram_url
     @facebook_url = SocialLink.last.facebook_url
-    @telephone = SocialLink.last.telephone
   end
 
   def prepare_contact_form
