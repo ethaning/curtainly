@@ -32,7 +32,7 @@ header {
     }
   }
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-md) {
     .menu-icons {
       display: none;
     }
@@ -64,7 +64,7 @@ header {
   text-align: center;
   margin: 25px 0 0;
 
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: $screen-sm-max) {
     display: none;
   }
 }

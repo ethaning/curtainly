@@ -31,7 +31,7 @@ h1.header-logo-text {
 .sidebar {
   background-color: $navbar;
 
-  @media (min-width: $screen-sm) {
+  @media (min-width: $screen-md) {
     background-color: inherit;
   }
 
@@ -40,7 +40,7 @@ h1.header-logo-text {
     color: $text;
   }
 
-  @media (max-width: $screen-xs-max) {
+  @media (max-width: $screen-sm-max) {
     background-color: $backdrop;
   }
 }
