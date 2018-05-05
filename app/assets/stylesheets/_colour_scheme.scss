@@ -43,6 +43,14 @@ h1.header-logo-text {
   @media (max-width: $screen-md-max) {
     background-color: $backdrop;
   }
+
+  a.social-icon {
+    color: $highlight;
+  }
+
+  a.social-icon:hover {
+    background-color: inherit;
+  }
 }
 
 .nav-line {
@@ -69,10 +77,6 @@ h1.header-logo-text {
       color: $text;
     }
   }
-}
-
-.social-icon {
-  color: $highlight;
 }
 
 .modal-content {

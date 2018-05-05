@@ -24,22 +24,7 @@
 }
 
 .social-contact {
-  position: absolute;
-  bottom: 15px;
-  font-size: 1.8rem;
-  left: -90px;
-
-  @media (min-width: $screen-md) {
-    left: -110px;
-  }
-
-  @media (min-width: $screen-lg) {
-    left: -150px;
-  }
-
-  @media (min-width: $screen-xl) {
-    left: -160px;
-  }
+  font-size: 2rem;
 
   .social-icon {
     margin-right: 0.5rem;
