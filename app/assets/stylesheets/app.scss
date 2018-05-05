@@ -1,6 +1,11 @@
+html {
+  @media (max-width: $screen-xs-max) {
+    font-size: 90%;
+  }
+}
 
 .header {
-  margin-top: 25px;
+  margin-top: 0.5rem;
   margin-bottom: 5px;
 }
 
@@ -24,8 +29,10 @@
 }
 
 .section-border-top {
-  border-top: 2px groove;
-  margin-top: 1rem;
+  @media (min-width: $screen-lg) {
+    border-top: 2px groove;
+    margin-top: 1rem;
+  }
 }
 
 .w-100 {
