@@ -2,7 +2,7 @@
   <h1 class="header">About Curtainly</h1>
   <h3 class="subheader"><%= Subheader.last.about_us %></h3>
   <% @about.text_array.each.with_index do |x, i| %>
-    <%= image_tag '8.jpg', class: "about-us-image" if i == 1 %>
+    <%= image_tag AboutUs.last.image.url, class: "about-us-image" if i == 1 %>
     <p class="para"><%= x %></p>
   <% end %>
 </section>
