@@ -1,0 +1,35 @@
+$font-9: 'Hind Siliguri', sans-serif;
+$font-8: 'Source Serif Pro', serif;
+$font-11: 'Nanum Gothic', sans-serif;
+// font-family: 'Noticia Text', serif;
+
+
+$main-font: $font-9;
+$serif-font: $font-8;
+$thin-font: $font-11;
+
+body {
+  font-family: $main-font;
+}
+
+.subheader {
+  font-family: $thin-font;
+}
+
+.header-subheader-text {
+  font-family: $main-font;
+}
+
+.testimonial {
+  .quotes {
+    font-family: $thin-font;
+  }
+}
+
+.testimonial-text {
+  font-family: $serif-font;
+}
+
+.testimonial-location{
+  font-family: $thin-font;
+}

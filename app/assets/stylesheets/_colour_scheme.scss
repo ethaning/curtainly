@@ -9,6 +9,8 @@ $bootstrap-border: #e9ecef;
 $carousel-indicator: rgba(0, 0, 0, 0.2);
 $carousel-indicator-active: rgba(0, 0, 0, 0.5);
 
+$black: #000;
+
 body {
   background-color: $backdrop;
 }
@@ -73,6 +75,12 @@ h1.header-logo-text {
 .gallery-item {
   .overlay {
     background-color: $hover;
+
+    a {
+      p {
+        color: $black;
+      }
+    }
   }
 }
 
