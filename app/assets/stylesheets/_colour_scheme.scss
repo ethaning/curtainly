@@ -1,6 +1,7 @@
 $backdrop: #f4f4f4;
 $navbar: #fff;
 $hover: #dcd0c0;
+$hover-translucent: rgba(220, 208, 192, 0.5);
 $text: #373737;
 $text-soft: #444;
 $highlight: #c0b283;
@@ -36,7 +37,7 @@ h1.header-logo-text {
   }
 
   a:hover {
-    background-color: $hover;
+    background-color: $hover-translucent;
     color: $text;
   }
 
@@ -54,7 +55,7 @@ h1.header-logo-text {
 }
 
 .nav-line {
-  border-color: $highlight !important;
+  border-color: $hover !important;
 }
 
 .testimonial {
