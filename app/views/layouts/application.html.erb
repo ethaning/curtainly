@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body>
+  <body class=<%= "non-homepage-section" if non_homepage_section? %>>
     <div class="flash">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>

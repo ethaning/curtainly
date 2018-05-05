@@ -27,6 +27,10 @@ h1.header-logo-text {
   color: $text-soft;
 }
 
+.section-border-top {
+  border-color: $highlight !important;
+}
+
 .menu-icons {
   color: $highlight;
 }
