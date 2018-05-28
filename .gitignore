@@ -22,3 +22,4 @@ tasks.todo
 Procfile
 
 /public/uploads
+/config/local_env.yml
